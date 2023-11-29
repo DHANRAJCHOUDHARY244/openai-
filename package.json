@@ -1,0 +1,36 @@
+{
+  "name": "chatboat",
+  "version": "1.0.0",
+  "description": "intreact with openai with use of express, socket.io and openai",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix ./client",
+    "start": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "node",
+    "socket.io",
+    "express",
+    "chatboat",
+    "chatgpt",
+    "clone"
+  ],
+  "author": "dhanraj choudhary",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "colors": "^1.4.0",
+    "concurrently": "^8.2.2",
+    "cookie": "^0.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.1",
+    "morgan": "^1.10.0",
+    "openai": "^3.1.0"
+  }
+}
